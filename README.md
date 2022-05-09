@@ -1,1 +1,1 @@
-# expert-potato
+# interactive-rating
