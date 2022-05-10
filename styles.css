@@ -1,0 +1,104 @@
+:root {
+    --orange-color: hsl(25, 97%, 53%);
+    --white-color: hsl(0, 0%, 100%);
+    --light-grey-color: hsl(217, 12%, 63%);
+    --medium-grey-color: hsl(216, 12%, 54%);
+    --medium-grey-color-trans: hsl(216, 12%, 54%, .1);
+    --dark-blue-color: hsl(213, 19%, 18%);
+    --very-dark-blue-color: hsl(216, 12%, 8%);
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--very-dark-blue-color);
+}
+
+h2 {
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.star {
+    background-color: var(--medium-grey-color-trans);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--light-grey-color)
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: var(--dark-blue-color);
+    width: 375px;
+    border-radius: 25px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10%;
+}
+
+.rating-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.rating-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    color: var(--light-grey-color);
+    background-color: var(--medium-grey-color-trans);
+border-radius: 50%;
+}
+
+.rating-btn:hover {
+    color: var(--white-color);
+    background-color: var(--orange-color);
+    cursor: pointer;
+}
+
+.active {
+    color: var(--white-color);
+    background-color: var(--medium-grey-color);
+}
+
+.submit-btn {
+    color: var(--white-color);
+    background:var(--orange-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+/* media query breaks, start with mobile 
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
