@@ -10,4 +10,4 @@ function changeButton(event) {
     });
     event.target.classList.add('active');
 })
-}
+};
