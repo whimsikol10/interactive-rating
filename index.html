@@ -14,32 +14,56 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="card-container">
-                <div class="star">
-                    <img src="icon-star.svg " alt="star icon" />
+    <div class="container show">
+        <div class="card show">
+            <div class="card-container show">
+                <div class="star show">
+                    <img src="icon-star.svg " alt="star icon" class="show" />
                 </div>
-                <h2>How did we do? </h2>
-                <div class="text">Please let us know how we did with your support request. All feedback is
-                    appreciated
-                    to help us
-                    improve
-                    our offering!</p>
+                <h2 class="show">How did we do? </h2>
+                <div class="show">
+                    <p class="text show">Please let us know how we did with your support request. All feedback
+                        is
+                        appreciated
+                        to help us
+                        improve
+                        our offering!</p>
                 </div>
-                <div class="rating-container">
-                    <div class="rating-btn">1</div>
-                    <div class="rating-btn">2</div>
-                    <div class="rating-btn">3</div>
-                    <div class="rating-btn">4</div>
-                    <div class="rating-btn">5</div>
-                </div>
-                <div class="submit-btn">
-                    SUBMIT
+                <div class="show" id="form-container">
+                    <form action="" class="show" id="ratingform">
+                        <div class="rating-container show">
+                            <label for="1" class="rating-btn show">1</label>
+                            <input type="radio" name="rating" id="1" value="1" class="hide">
+                            <label for="2" class="rating-btn show">2</label>
+                            <input type="radio" name="rating" id="2" value="2" class="hide">
+                            <label for="3" class="rating-btn show">3</label>
+                            <input type="radio" name="rating" id="3" value="3" class="hide">
+                            <label for="4" class="rating-btn show">4</label>
+                            <input type="radio" name="rating" id="4" value="4" class="hide">
+                            <label for="5" class="rating-btn show">5</label>
+                            <input type="radio" name="rating" id="5" value="5" class="hide">
+                        </div>
+                        <button type="submit" value="submit" class="submit-btn show">SUBMIT
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+    <div class="card hide">
+        <div class="card-container-thank hide">
+            <img src="illustration-thank-you.svg" alt="phone graphic" class="hide" />
+            <div class="rating-feedback hide">
+                <p class="hide" id="feedback"></p>
+            </div>
+            <h2 class="hide">Thank you!</h2>
+            <div class="text text-two hide">We appreciate you taking the time to give a rating. If you ever need
+                more
+                support, don’t hesitate to get in touch!
+            </div>
+        </div>
+    </div>
+
 </body>
 
 <script src="index.js">

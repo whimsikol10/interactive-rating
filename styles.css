@@ -18,6 +18,11 @@ h2 {
     color: var(--white-color);
 }
 
+.hide {
+    display: none;
+    visibility: hidden;
+}
+
 .star {
     background-color: var(--medium-grey-color-trans);
     height: 50px;
@@ -55,6 +60,10 @@ h2 {
     padding: 10%;
 }
 
+#form-container {
+    width: 100%;
+}
+
 .rating-container {
     width: 100%;
     display: flex;
@@ -71,7 +80,7 @@ h2 {
     width: 40px;
     color: var(--light-grey-color);
     background-color: var(--medium-grey-color-trans);
-border-radius: 50%;
+    border-radius: 50%;
 }
 
 .rating-btn:hover {
@@ -87,18 +96,46 @@ border-radius: 50%;
 
 .submit-btn {
     color: var(--white-color);
-    background:var(--orange-color);
+    background: var(--orange-color);
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 40px;
+    border: none;
 }
 
+.submit-btn:hover {
+    color: var(--orange-color);
+    background-color: var(--white-color);
+    cursor: pointer;
+    transition: 0s;
+}
+
+/* Submitted Page */
+
+.card-container-thank {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+}
+
+.rating-feedback {
+    color: var(--orange-color);
+    background: var(--medium-grey-color-trans);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 40px;
+    border: none;
+}
+
+.text-two {
+    text-align: center;
+}
 
 /* media query breaks, start with mobile 
 - Mobile: 375px
 - Desktop: 1440px
 */
-
